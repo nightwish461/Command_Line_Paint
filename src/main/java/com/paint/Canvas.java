@@ -96,6 +96,22 @@ public class Canvas {
 			System.out.print("\n");
 		}
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder strBld = new StringBuilder();
+		 
+		 for(int i = 0; i<= height-1; i++) { 
+				for(int y = 0; y<=width-1; y++) {
+					char c = canvas[i][y];
+					if(c != ' ') {
+						strBld.append(canvas[i][y]); 
+					}
+				}
+				strBld.append('\n');
+		 }
+		 return strBld.toString(); 
+	}
 
 	public int getWidth() {
 		return width;

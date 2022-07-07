@@ -23,6 +23,10 @@ public class PaintApp {
 					int height = Integer.parseInt(parts[2]);
 					canvas = new Canvas(width, height);
 					canvas.displayCanvas();
+					//System.out.print(canvas.toString());
+					String s = "-------\n|     |\n|     |\n|     |\n|     |\n|     |\n-------";
+					String s2 = canvas.toString();
+					System.out.println(s2.equals(s2));
 				} catch (Exception e) {
 					System.out.print("Enter a correct command");
 				}
